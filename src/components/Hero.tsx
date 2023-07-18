@@ -1,4 +1,5 @@
 import { hero } from "../data";
+import Stats from "./Stats";
 
 const Hero = () => {
   const { title, subtitle, buttonText } = hero;
@@ -16,6 +17,7 @@ const Hero = () => {
         text-xl rounded-md backdrop-blur-md transition lg:px-[80px] lg:py-[16px]">
           {buttonText}
         </button>
+        <Stats />
       </div>
     </section>
   );
